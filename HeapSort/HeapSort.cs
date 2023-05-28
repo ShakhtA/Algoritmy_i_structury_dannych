@@ -32,16 +32,5 @@ void HeapSort(int[] arr)
 }
 
 
-Console.Write("Введите размер массива - ");
-int sizeArray = int.Parse(Console.ReadLine() ?? " ");
-int[] array = new int[sizeArray];
-for (int i = 0; i < sizeArray; i++)
-    array[i] = new Random().Next(100);
-
-Console.WriteLine("Созданный массив:");
-Console.WriteLine(string.Join(" ", array));
-HeapSort(array);
-Console.WriteLine("Отсортированный массив:");
-Console.WriteLine(string.Join(" ", array));
 
 
